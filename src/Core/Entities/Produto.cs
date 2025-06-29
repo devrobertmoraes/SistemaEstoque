@@ -8,27 +8,27 @@ public class Produto
     /// <summary>
     /// Id do produto
     /// </summary>
-    public Guid Id { set; private get; }
+    public Guid Id { get; private set; }
 
     /// <summary>
     /// Nome do produto
     /// </summary>
-    public string Nome { set; private get; }
+    public string Nome { get; private set; }
 
     /// <summary>
     /// Descrição detalhada
     /// </summary>
-    public string Descricao { set; private get; }
+    public string Descricao { get; private set; }
 
     /// <summary>
     /// Preço
     /// </summary>
-    public decimal Preco { set; private get; }
+    public decimal Preco { get; private set; }
 
     /// <summary>
     /// Stock Keeping Unit
     /// </summary>
-    public string Sku { set; private get; }
+    public string Sku { get; private set; }
 
     /// <summary>
     /// Um produto pode ter várias movimentações
