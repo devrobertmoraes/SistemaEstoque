@@ -13,12 +13,12 @@ public class Produto
     /// <summary>
     /// Nome do produto
     /// </summary>
-    public string Nome { get; private set; }
+    public string Nome { get; private set; } = string.Empty;
 
     /// <summary>
     /// Descrição detalhada
     /// </summary>
-    public string Descricao { get; private set; }
+    public string Descricao { get; private set; } = string.Empty;
 
     /// <summary>
     /// Preço
@@ -28,7 +28,7 @@ public class Produto
     /// <summary>
     /// Stock Keeping Unit
     /// </summary>
-    public string Sku { get; private set; }
+    public string Sku { get; private set; } = string.Empty;
 
     /// <summary>
     /// Um produto pode ter várias movimentações
@@ -47,6 +47,8 @@ public class Produto
         Sku = sku;
         MovimentacoesEstoque = new List<MovimentacaoEstoque>();
     }
+
+    public Produto() {}
 
     public void AtualizarPreco(decimal novoPreco)
     {
