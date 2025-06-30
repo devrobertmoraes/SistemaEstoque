@@ -16,6 +16,12 @@ public class ProdutoService
         _produtoRepository = produtoRepository;
     }
 
+    /// <summary>
+    /// Cria um novo produto no sistema com base nos dados fornecidos.
+    /// </summary>
+    /// <param name="dto">O objeto de transferência de dados contendo as informações do novo produto</param>
+    /// <returns>Uma task que representa a conclusão da operação assíncrona</returns>
+    /// <exception cref="Exception">Lança uma excessão se o preço do produto for menor que 0</exception>
     public async Task CriarProdutoAsync(CriarProdutoDTO dto)
     {
         if (dto.Preco <= 0)
